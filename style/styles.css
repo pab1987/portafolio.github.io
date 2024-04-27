@@ -166,7 +166,7 @@ header h1 {
 }
 
 .contenedor-icons>div>img {
-    width: 100px;
+    width: 80px;
     height: 180px;
     margin-right: 20px;
     object-fit: contain;
