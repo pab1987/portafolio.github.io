@@ -8,33 +8,46 @@
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <h1>Mi Portafolio</h1>
         <nav>
             <ul>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#element-group-title">Inicio</a></li>
+                <li><a href="#div-sobre-mi">Sobre Mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="sobre-mi">
+    <div id="element-group-title" class="element-group-title">
         <h1 class="titulo-perfil">Desarrollador Web y Móvil</h1>
         <h3 class="slogan">De la imaginación a la web</h3>
-        <!-- <h2>Sobre Mí</h2>
-        <p>
-            Desarrollador de software autodidacta y proactivo con experiencia en la creación de aplicaciones web y móviles 
-            utilizando diversas tecnologías como C#, PHP, Python, JavaScript, HTML, CSS, Flutter, Dart y bases de datos 
-            PostgreSQL. Apasionado por la tecnología y comprometido con el aprendizaje continuo para mantenerme actualizado 
-            en el cambiante panorama tecnológico. Poseo sólidas habilidades de control de versiones con Git, GitHub y GitLab, 
-            lo que me permite colaborar eficazmente en proyectos y trabajar de forma independiente. Experiencia en trabajo en 
-            equipo que ha mejorado mis habilidades de comunicación y relaciones interpersonales, facilitando la colaboración 
-            con otros profesionales. Entusiasta ante los desafíos y la resolución de problemas, disfruto explorando nuevas 
-            soluciones y buscando constantemente oportunidades para mejorar mi trabajo y adquirir conocimientos en tecnologías 
-            y enfoques innovadores. Emocionado de contribuir a proyectos desafiantes y creativos que impulsen el avance tecnológico.
-        </p> -->
         <img src="./img/perfil.jpg" alt="" class="foto-perfil">
+        <img src="./img/portada-removebg.png" alt="" class="image-portada">
+    </div>
+
+    <section id="sobre-mi" class="sobre-mi">
+        <!-- <img src="./img/portada-removebg.png" alt="" class="image-portada"> -->
+        <div id="div-sobre-mi" class="div-sobre-mi">
+            <h2 class="h2-sobre-mi">
+                Soy Pablo Lara, bienvenido a mi portafolio profesional. 
+            </h2>
+            <p class="p-sobre-mi">
+                Desde que empecé en el mundo del desarrollo de software me he apasionado por crear soluciones digitales 
+                innovadoras. Estoy encantado de que estés aquí y espero que 
+                disfrutes explorando mi trabajo. Si tienes alguna pregunta o necesitas 
+                ayuda, no dudes en contactarme. ¡Gracias por visitar!
+            </p>
+
+        </div>
+    </section>
+
+
+    <section id="proyectos" class="proyectos">
+            <h2 class="h2-proyectos">
+                Mis proyectos
+            </h2>
     </section>
 
     <section id="proyectos">
@@ -65,6 +78,13 @@
     <footer>
         <p>&copy; 2024 Pablo Cesar Lara Londoño</p>
     </footer>
+
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+    </script>
+    
 
 </body>
 </html>

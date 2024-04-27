@@ -16,14 +16,22 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    /* position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; */
 }
 
 header h1 {
     margin-bottom: 10px;
 }
 
+/* .element-group-title {
+    margin-top: 70px;
+} */
+
 .titulo-perfil {
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
     font-size: 60px;
     font-family: "Roboto Mono", monospace;
@@ -47,7 +55,73 @@ header h1 {
     width: 250px;
     height: 250px;
     display: block;
-    margin: 50px auto 0;
+    margin: 50px auto ;
+}
+
+/* .sobre-mi {
+
+} */
+
+.image-portada {
+    display: block;
+    object-fit: cover;
+    margin: auto;
+    width: 900px;
+    margin-top: -140px;
+
+}
+
+.div-sobre-mi {
+    height: 300px;
+    width: 100%;
+    background-color: #483285;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin: -180px auto 0 auto;
+}
+
+.h2-sobre-mi {
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.p-sobre-mi {
+    margin-top: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+.proyectos {
+    background-color: #ffffff;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 10px;
+    border: 1px solid #000;
+
+}
+
+.h2-proyectos {
+    text-align: center;
+    color: #000000;
+    font-size: 30px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 }
 
 
