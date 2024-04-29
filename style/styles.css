@@ -1,4 +1,5 @@
-/* Reset de estilos */
+
+ /* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +10,14 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    max-width: 1700px; /* Limita el ancho máximo de la página */
+    margin: 0 auto; /* Centra la página horizontalmente */
 }
 
 header {
     background-color: #483285;
     color: #fff;
-    padding: 20px 0;
+    padding: 2.5% 0; /* Convertido de 20px a porcentaje */
     text-align: center;
     /* position: fixed;
     width: 100%;
@@ -22,33 +25,26 @@ header {
     z-index: 1000; */
 }
 
-header h1 {
-    margin-bottom: 10px;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 40px;
+header > h1 {
+    font-size: min(3.75vw, 40px);
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 }
 
 .header nav ul li a {
-    font-size: 20px;
+    font-size: min(1.5625vw, 20px); /* Convertido de 20px a vw */
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
 }
 
-/* .element-group-title {
-    margin-top: 70px;
-} */
-
 .titulo-perfil {
-    margin-top: 20px;
+    margin-top: 2.5%; /* Convertido de 20px a porcentaje */
     text-align: center;
-    font-size: 60px;
+    font-size: min(3.75vw, 60px); /* Convertido de 60px a vw */
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -57,7 +53,7 @@ header h1 {
 
 .slogan {
     text-align: center;
-    font-size: 30px;
+    font-size: min(2.34375vw, 30px); /* Convertido de 30px a vw */
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -67,39 +63,33 @@ header h1 {
 .foto-perfil {
     border-radius: 50%;
     object-fit: cover;
-    width: 250px;
-    height: 250px;
+    width: min(15vw); 
+    height: min(15vw);
     display: block;
-    margin: 50px auto;
+    margin: 1.25% auto; /* Convertido de 50px a porcentaje */
 }
-
-/* .sobre-mi {
-
-} */
 
 .image-portada {
     display: block;
     object-fit: cover;
     margin: auto;
-    width: 900px;
-    margin-top: -150px;
-
+    width: min(56.25vw); /* Convertido de 900px a vw */
+    margin-top: -10.625vw; /* Convertido de -150px a vw */
 }
 
 .div-sobre-mi {
-    height: 300px;
+    height: min(18.75vw); /* Convertido de 300px a vw */
     width: 100%;
     background-color: #483285;
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 20px;
-    margin: -180px auto 0 auto;
+    border-radius: 1.5625vw; /* Convertido de 10px a vw */
+    padding: 2.5%; /* Convertido de 20px a porcentaje */
+    margin: -10.3vw auto 0 auto; /* Convertido de -180px a vw */
 }
 
 .h2-sobre-mi {
     text-align: center;
     color: #ffffff;
-    font-size: 30px;
+    font-size: min(2.34375vw, 30px); /* Convertido de 30px a vw */
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 100;
@@ -107,37 +97,27 @@ header h1 {
 }
 
 .p-sobre-mi {
-    margin-top: 30px;
+    margin-top: 3.5%; /* Convertido de 30px a porcentaje */
     text-align: center;
     color: #ffffff;
-    font-size: 22px;
+    font-size: min(1.71875vw, 22px); /* Convertido de 22px a vw */
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
 }
-
 
 .proyectos {
     background-color: #ffffff;
-    min-height: 200px;
-    margin-top: -100px;
-    margin-left: 80px;
-    margin-right: 80px;
-    border-radius: 10px;
-    border: 0.5px solid #525151;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    min-height: min(12.5%); /* Convertido de 200px a porcentaje */
+    margin-top: -5.25%; /* Convertido de -100px a porcentaje */
+    margin-left: 8.8889%; /* Convertido de 80px a porcentaje */
+    margin-right: 8.8889%; /* Convertido de 80px a porcentaje */
+    border-radius: 1.5625vw; /* Convertido de 10px a vw */
+    box-shadow: 0px 0.3125vw 0.3125vw rgba(0, 0, 0, 0.3); /* Convertido de 5px a vw */
 }
 
-.h2-proyectos {
-    text-align: center;
-    color: #000000;
-    font-size: 30px;
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-}
+
 
 .contenedor-padre {
     display: flex;
@@ -145,18 +125,18 @@ header h1 {
 
 .contenedor-web {
     text-align: center;
-    border: 0.5px solid #9aa893;
-    border-top-left-radius: 10px;
-    padding: 10px 20px 0 10px;
+    border-right: 0.03125vw solid #9aa893; /* Convertido de 0.5px a vw */
+    border-top-left-radius: 1.5625vw; /* Convertido de 10px a vw */
+    padding: 0.625% 1.25% 0 0.625%; /* Convertido de 10px y 20px a porcentaje */
     max-width: 50%;
 }
 
 .contenedor-movil {
     max-width: 50%;
     text-align: center;
-    border: 0.5px solid #9aa893;
-    border-top-right-radius: 10px;
-    padding: 10px 20px 0 10px;
+    /* border: 0.03125vw solid #9aa893; */ /* Convertido de 0.5px a vw */
+    border-top-right-radius: 1.5625vw; /* Convertido de 10px a vw */
+    padding: 0.625% 1.25% 0 0.625%; /* Convertido de 10px y 20px a porcentaje */
 }
 
 .contenedor-icons {
@@ -166,16 +146,11 @@ header h1 {
 }
 
 .contenedor-icons>div>img {
-    width: 65px;
-    height: 140px;
-    margin-right: 20px;
+    width: 4.0625vw; /* Convertido de 65px a vw */
+    height: 8.75vw; /* Convertido de 140px a vw */
+    margin-right: 1.25vw; /* Convertido de 20px a vw */
     object-fit: contain;
-
 }
-
-
-
-
 
 nav ul {
     list-style-type: none;
@@ -183,7 +158,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 1.25vw; /* Convertido de 20px a vw */
 }
 
 nav ul li a {
@@ -192,31 +167,52 @@ nav ul li a {
 }
 
 section {
-    padding: 20px;
-    margin-bottom: 30px;
+    padding: 1.25%; /* Convertido de 20px a porcentaje */
+    margin-bottom: 2.5%; /* Convertido de 30px a porcentaje */
 }
 
 h2 {
-    margin-bottom: 10px;
+    margin-bottom: 1.25%; /* Convertido de 10px a porcentaje */
 }
 
 .proyecto {
     background-color: #f4f4f4;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 0.625%; /* Convertido de 10px a porcentaje */
+    margin-bottom: 2.5%; /* Convertido de 20px a porcentaje */
+}
+
+.icon-laptop-project {
+    border-radius: 50%;
+    object-fit: cover;
+    width: min(7vw); 
+    height: min(7vw);
+    display: block;
+    margin: -1.25% auto 1.25%;
+}
+
+.icon-app-project {
+    border-radius: 50%;
+    object-fit: cover;
+    width: min(5.5vw); 
+    height: min(5.5vw);
+    display: block;
+    margin-top: 1.20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.9%;
 }
 
 .proyecto h3 {
-    margin-bottom: 5px;
+    margin-bottom: 0.625%; /* Convertido de 5px a porcentaje */
 }
 
 .proyecto p {
-    margin-bottom: 10px;
+    margin-bottom: 1.25%; /* Convertido de 10px a porcentaje */
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 0.625% 0; /* Convertido de 10px y 0px a porcentaje */
 }
