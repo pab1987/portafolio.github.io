@@ -1,5 +1,4 @@
-
- /* Reset de estilos */
+/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +11,9 @@ body {
     line-height: 1.6;
     max-width: 1700px; /* Limita el ancho máximo de la página */
     margin: 0 auto; /* Centra la página horizontalmente */
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 header {
@@ -19,18 +21,12 @@ header {
     color: #fff;
     padding: 2.5% 0; /* Convertido de 20px a porcentaje */
     text-align: center;
-    /* position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000; */
 }
 
 header > h1 {
     font-size: min(3.75vw, 40px);
     font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;
 }
 
 .header nav ul li a {
@@ -45,9 +41,10 @@ header > h1 {
     margin-top: 2.5%; /* Convertido de 20px a porcentaje */
     text-align: center;
     font-size: min(3.75vw, 60px); /* Convertido de 60px a vw */
+
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -67,6 +64,7 @@ header > h1 {
     height: min(15vw);
     display: block;
     margin: 1.25% auto; /* Convertido de 50px a porcentaje */
+    
 }
 
 .image-portada {
@@ -101,10 +99,6 @@ header > h1 {
     text-align: center;
     color: #ffffff;
     font-size: min(1.71875vw, 22px); /* Convertido de 22px a vw */
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
 }
 
 .proyectos {
@@ -117,82 +111,50 @@ header > h1 {
     box-shadow: 0px 0.3125vw 0.3125vw rgba(0, 0, 0, 0.3); /* Convertido de 5px a vw */
 }
 
-.titulo-contenedor-web {
-    text-align: center;
-    font-size: min(1.71875vw, 22px); /* Convertido de 22px a vw */
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-}
-
+.titulo-contenedor-web,
 .titulo-contenedor-movil {
     text-align: center;
     font-size: min(1.71875vw, 22px); /* Convertido de 22px a vw */
     font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
     font-weight: 600;
-    font-style: normal;
 }
 
-.texto-web {
-    text-align: center;
-    font-size: min(1.41875vw);
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.lenguajes-web {
-    margin-top: min(1.5vw);
-    font-size: min(1.71875vw, 22px); /* Convertido de 22px a vw */
-    text-align: center;
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-}
-
+.texto-web,
 .texto-movil {
     text-align: center;
     font-size: min(1.41875vw);
     font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
 }
 
+.lenguajes-web,
 .lenguajes-movil {
     margin-top: min(1.5vw);
-    text-align: center;
     font-size: min(1.71875vw, 22px); /* Convertido de 22px a vw */
+    text-align: center;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
 }
-
-
 
 .contenedor-padre {
     display: flex;
 }
 
-.contenedor-web {
+.contenedor-web,
+.contenedor-movil {
     text-align: center;
-    border-right: 0.03125vw solid #9aa893; /* Convertido de 0.5px a vw */
-    border-top-left-radius: 1.5625vw; /* Convertido de 10px a vw */
-    padding: 0.625% 1.25% 0 0.625%; /* Convertido de 10px y 20px a porcentaje */
+    padding: 0.625% 1.25%;
     max-width: 50%;
 }
 
+.contenedor-web {
+    border-right: 0.03125vw solid #9aa893; /* Convertido de 0.5px a vw */
+    border-top-left-radius: 1.5625vw; /* Convertido de 10px a vw */
+}
+
 .contenedor-movil {
-    max-width: 50%;
-    text-align: center;
-    /* border: 0.03125vw solid #9aa893; */ /* Convertido de 0.5px a vw */
     border-top-right-radius: 1.5625vw; /* Convertido de 10px a vw */
-    padding: 0.625% 1.25% 0 0.625%; /* Convertido de 10px y 20px a porcentaje */
 }
 
 .contenedor-icons {
@@ -201,11 +163,10 @@ header > h1 {
     flex-wrap: wrap;
 }
 
-.contenedor-icons>div>img {
+.contenedor-icons > div > img {
     width: 4.0625vw; /* Convertido de 65px a vw */
-    height: 8.75vw; /* Convertido de 140px a vw */
+    height: 5.5vw; /* Convertido de 140px a vw */
     margin-right: 1.25vw; /* Convertido de 20px a vw */
-    object-fit: contain;
 }
 
 nav ul {
@@ -237,7 +198,8 @@ h2 {
     margin-bottom: 2.5%; /* Convertido de 20px a porcentaje */
 }
 
-.icon-laptop-project {
+.icon-laptop-project,
+.icon-app-project {
     border-radius: 50%;
     object-fit: cover;
     width: min(7vw); 
@@ -247,11 +209,8 @@ h2 {
 }
 
 .icon-app-project {
-    border-radius: 50%;
-    object-fit: cover;
     width: min(5.5vw); 
     height: min(5.5vw);
-    display: block;
     margin-top: 1.20%;
     margin-left: auto;
     margin-right: auto;
@@ -273,55 +232,11 @@ footer {
     padding: 0.625% 0; /* Convertido de 10px y 0px a porcentaje */
 }
 
-
-
 /* Media queries para dispositivos móviles */
 @media only screen and (max-width: 768px) {
-
-    header > h1 {
-        font-size: min(4.75vw, 40px);
-        font-family: "Roboto Mono", monospace;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-    }
-
-    .header nav ul li a {
-        font-size: min(2.5625vw, 20px); /* Convertido de 20px a vw */
-        font-family: "Roboto Mono", monospace;
-        font-optical-sizing: auto;
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    .titulo-perfil {
-        margin-top: 2.5%; /* Convertido de 20px a porcentaje */
-        text-align: center;
-        font-size: min(4.75vw, 60px); /* Convertido de 60px a vw */
-        font-family: "Roboto Mono", monospace;
-        font-optical-sizing: auto;
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    .slogan {
-        text-align: center;
-        font-size: min(3.34375vw, 30px); /* Convertido de 30px a vw */
-        font-family: "Roboto Mono", monospace;
-        font-optical-sizing: auto;
-        font-weight: normal;
-        font-style: normal;
-    }
-
-
-
     .foto-perfil {
-        width: min(20vw); 
-        height: min(20vw);
-        border-radius: 50%;
-        object-fit: cover;
-        display: block;
-        margin: 1.25% auto;
+        width: 40vw; /* Cambiado para adaptarse mejor a dispositivos móviles */
+        height: 40vw; /* Cambiado para adaptarse mejor a dispositivos móviles */
     }
 
     body {
@@ -332,58 +247,20 @@ footer {
     }
 
     .image-portada {
-        display: block;
-        object-fit: cover;
-        margin: auto;
-        width: min(56.25vw); /* Convertido de 900px a vw */
-        margin-top: -10.625vw; /* Convertido de -150px a vw */
+        width: 90vw; /* Cambiado para adaptarse mejor a dispositivos móviles */
+        margin-top: -40vw; /* Cambiado para adaptarse mejor a dispositivos móviles */
     }
 
     .div-sobre-mi {
-        /* width: 100%; */
-        width: auto;
-        height: auto;
-        background-color: #483285;
-        border-radius: 1.5625vw; /* Convertido de 10px a vw */
-        padding: 2.5%; /* Convertido de 20px a porcentaje */
-        margin: -10.3vw auto 0 auto; /* Convertido de -180px a vw */
-    }
-
-    .h2-sobre-mi {
-        text-align: center;
-        color: #ffffff;
-        font-size: min(3.34375vw, 30px); /* Convertido de 30px a vw */
-        font-family: "Roboto Mono", monospace;
-        font-optical-sizing: auto;
-        font-weight: 100;
-        font-style: normal;
-    }
-
-    .p-sobre-mi {
-        margin-top: 3.5%; /* Convertido de 30px a porcentaje */
-        text-align: center;
-        color: #ffffff;
-        font-size: min(2.71875vw, 22px); /* Convertido de 22px a vw */
-        font-family: "Roboto Mono", monospace;
-        font-optical-sizing: auto;
-        font-weight: 100;
-        font-style: normal;
-    }
-
-    .contenedor-padre {
-        display: flex;
+        height: 65vw; /* Cambiado para adaptarse mejor a dispositivos móviles */
+        border-radius: 5vw; /* Cambiado para adaptarse mejor a dispositivos móviles */
+        margin: -40vw auto 0 auto; /* Cambiado para adaptarse mejor a dispositivos móviles */
     }
 
     .proyectos {
+        margin-top: -15vw; /* Cambiado para adaptarse mejor a dispositivos móviles */
         margin-left: 5%; /* Cambiado para adaptarse mejor a dispositivos móviles */
         margin-right: 5%; /* Cambiado para adaptarse mejor a dispositivos móviles */
-        background-color: #ffffff;
-        min-height: min(12.5%); /* Convertido de 200px a porcentaje */
-        margin-top: -5.25%; /* Convertido de -100px a porcentaje */
-        margin-left: 8.8889%; /* Convertido de 80px a porcentaje */
-        margin-right: 8.8889%; /* Convertido de 80px a porcentaje */
-        border-radius: 1.5625vw; /* Convertido de 10px a vw */
-        box-shadow: 0px 0.3125vw 0.3125vw rgba(0, 0, 0, 0.3); /* Convertido de 5px a vw */
     }
 
     .icon-laptop-project,
@@ -391,31 +268,4 @@ footer {
         width: 15vw; /* Cambiado para adaptarse mejor a dispositivos móviles */
         height: 15vw; /* Cambiado para adaptarse mejor a dispositivos móviles */
     }
-
-    .texto-movil,
-    .texto-web {
-        text-align: center;
-        font-size: min(2.41875vw);
-        font-family: "Roboto Mono", monospace;
-        font-optical-sizing: auto;
-        font-weight: 100;
-        font-style: normal;
-    }
-
-
-    .titulo-contenedor-movil,
-    .titulo-contenedor-web {
-        text-align: center;
-        font-size: min(2.71875vw, 22px); /* Convertido de 22px a vw */
-        font-family: "Roboto Mono", monospace;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-    }
 }
-
-
-
-
-
-
