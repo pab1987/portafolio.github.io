@@ -110,7 +110,7 @@ header > h1 {
 .proyectos {
     background-color: #ffffff;
     min-height: min(12.5%); /* Convertido de 200px a porcentaje */
-    margin-top: -5.25%; /* Convertido de -100px a porcentaje */
+    margin-top: -4.25%; /* Convertido de -100px a porcentaje */
     margin-left: 8.8889%; /* Convertido de 80px a porcentaje */
     margin-right: 8.8889%; /* Convertido de 80px a porcentaje */
     border-radius: 1.5625vw; /* Convertido de 10px a vw */
@@ -287,7 +287,7 @@ footer {
     }
 
     .header nav ul li a {
-        font-size: min(2.5625vw, 20px); /* Convertido de 20px a vw */
+        font-size: min(3.5625vw, 20px); /* Convertido de 20px a vw */
         font-family: "Roboto Mono", monospace;
         font-optical-sizing: auto;
         font-weight: normal;
@@ -295,7 +295,7 @@ footer {
     }
 
     .titulo-perfil {
-        margin-top: 2.5%; /* Convertido de 20px a porcentaje */
+        margin-top: 3.5%; /* Convertido de 20px a porcentaje */
         text-align: center;
         font-size: min(4.75vw, 60px); /* Convertido de 60px a vw */
         font-family: "Roboto Mono", monospace;
@@ -306,7 +306,7 @@ footer {
 
     .slogan {
         text-align: center;
-        font-size: min(3.34375vw, 30px); /* Convertido de 30px a vw */
+        font-size: min(4vw, 30px); /* Convertido de 30px a vw */
         font-family: "Roboto Mono", monospace;
         font-optical-sizing: auto;
         font-weight: normal;
@@ -335,7 +335,7 @@ footer {
         display: block;
         object-fit: cover;
         margin: auto;
-        width: min(56.25vw); /* Convertido de 900px a vw */
+        width: 80%; /* Convertido de 900px a vw */
         margin-top: -10.625vw; /* Convertido de -150px a vw */
     }
 
@@ -352,7 +352,7 @@ footer {
     .h2-sobre-mi {
         text-align: center;
         color: #ffffff;
-        font-size: min(3.34375vw, 30px); /* Convertido de 30px a vw */
+        font-size: min(4vw, 30px); /* Convertido de 30px a vw */
         font-family: "Roboto Mono", monospace;
         font-optical-sizing: auto;
         font-weight: 100;
@@ -363,7 +363,7 @@ footer {
         margin-top: 3.5%; /* Convertido de 30px a porcentaje */
         text-align: center;
         color: #ffffff;
-        font-size: min(2.71875vw, 22px); /* Convertido de 22px a vw */
+        font-size: min(3.71875vw, 22px); /* Convertido de 22px a vw */
         font-family: "Roboto Mono", monospace;
         font-optical-sizing: auto;
         font-weight: 100;
@@ -395,7 +395,7 @@ footer {
     .texto-movil,
     .texto-web {
         text-align: center;
-        font-size: min(2.41875vw);
+        font-size: min(3vw);
         font-family: "Roboto Mono", monospace;
         font-optical-sizing: auto;
         font-weight: 100;
@@ -406,11 +406,24 @@ footer {
     .titulo-contenedor-movil,
     .titulo-contenedor-web {
         text-align: center;
-        font-size: min(2.71875vw, 22px); /* Convertido de 22px a vw */
+        font-size: min(3.71875vw, 22px); /* Convertido de 22px a vw */
         font-family: "Roboto Mono", monospace;
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
+    }
+
+    .contenedor-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .contenedor-icons>div>img {
+        width: 8vw; /* Convertido de 65px a vw */
+        height: 10.75vw; /* Convertido de 140px a vw */
+        margin-right: 1.5vw; /* Convertido de 20px a vw */
+        object-fit: contain;
     }
 }
 
