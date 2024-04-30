@@ -39,6 +39,8 @@ header > h1 {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+    margin-right: min(0.5vw);
+    /* text-decoration: underline; */
 }
 
 .titulo-perfil {
@@ -287,11 +289,12 @@ footer {
     }
 
     .header nav ul li a {
-        font-size: min(3.5625vw, 20px); /* Convertido de 20px a vw */
+        font-size: min(4vw, 20px); /* Convertido de 20px a vw */
         font-family: "Roboto Mono", monospace;
         font-optical-sizing: auto;
         font-weight: normal;
         font-style: normal;
+        margin-right: min(0.5vw);
     }
 
     .titulo-perfil {
@@ -363,7 +366,7 @@ footer {
         margin-top: 3.5%; /* Convertido de 30px a porcentaje */
         text-align: center;
         color: #ffffff;
-        font-size: min(3.71875vw, 22px); /* Convertido de 22px a vw */
+        font-size: min(4vw, 22px); /* Convertido de 22px a vw */
         font-family: "Roboto Mono", monospace;
         font-optical-sizing: auto;
         font-weight: 100;
@@ -395,7 +398,7 @@ footer {
     .texto-movil,
     .texto-web {
         text-align: center;
-        font-size: min(3vw);
+        font-size: min(3.7vw);
         font-family: "Roboto Mono", monospace;
         font-optical-sizing: auto;
         font-weight: 100;
@@ -406,7 +409,7 @@ footer {
     .titulo-contenedor-movil,
     .titulo-contenedor-web {
         text-align: center;
-        font-size: min(3.71875vw, 22px); /* Convertido de 22px a vw */
+        font-size: min(4vw, 22px); /* Convertido de 22px a vw */
         font-family: "Roboto Mono", monospace;
         font-optical-sizing: auto;
         font-weight: 600;
@@ -424,6 +427,17 @@ footer {
         height: 10.75vw; /* Convertido de 140px a vw */
         margin-right: 1.5vw; /* Convertido de 20px a vw */
         object-fit: contain;
+    }
+
+    .lenguajes-web,
+    .lenguajes-movil {
+        margin-top: min(1.5vw);
+        font-size: min(3.71875vw, 22px); /* Convertido de 22px a vw */
+        text-align: center;
+        font-family: "Roboto Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
     }
 }
 
