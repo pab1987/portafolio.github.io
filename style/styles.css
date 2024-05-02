@@ -100,7 +100,7 @@ header > h1 {
 }
 
 .p-sobre-mi {
-    margin-top: 3.5%; /* Convertido de 30px a porcentaje */
+    margin-top: 2.5%; /* Convertido de 30px a porcentaje */
     text-align: center;
     color: #ffffff;
     font-size: min(1.71875vw, 22px); /* Convertido de 22px a vw */
