@@ -86,6 +86,7 @@ header > h1 {
     border-radius: 1.5625vw; /* Convertido de 10px a vw */
     padding: 2.5%; /* Convertido de 20px a porcentaje */
     margin: -10.3vw auto 0 auto; /* Convertido de -180px a vw */
+    padding-bottom: 20vw;
 }
 
 .h2-sobre-mi {
@@ -112,7 +113,7 @@ header > h1 {
 .proyectos {
     background-color: #ffffff;
     min-height: min(12.5%); /* Convertido de 200px a porcentaje */
-    margin-top: -4.25%; /* Convertido de -100px a porcentaje */
+    margin-top: -6.25%; /* Convertido de -100px a porcentaje */
     margin-left: 8.8889%; /* Convertido de 80px a porcentaje */
     margin-right: 8.8889%; /* Convertido de 80px a porcentaje */
     border-radius: 1.5625vw; /* Convertido de 10px a vw */
@@ -375,6 +376,8 @@ footer {
 
     .contenedor-padre {
         display: flex;
+        
+
     }
 
     .proyectos {
