@@ -452,6 +452,17 @@ footer {
         font-weight: 600;
         font-style: normal;
     }
+
+    .p-lenguajes-web,
+    .p-lenguajes-movil {
+    margin-top: min(1.5vw);
+    text-align: center;
+    font-size: min(1.71875vw, 22px); /* Convertido de 22px a vw */
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    }
 }
 
 
