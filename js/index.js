@@ -6,6 +6,6 @@ window.onload = function () {
 
 const contactoEmail = document.getElementById('contacto-email');
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-contactoEmail.setAttribute('href', 'mailto:?subject=Solicitud%20de%20información%20desde%20tu%20portafólio&body=Hola,%20me%20gustaría%20obtener%20información%20sobre%20tu%20perfil');
+contactoEmail.setAttribute('href', 'mailto:pablo06lara87@gmail.com?subject=Solicitud%20de%20información%20desde%20tu%20portafólio&body=Hola,%20me%20gustaría%20obtener%20información%20sobre%20tu%20perfil.');
 
 
