@@ -315,6 +315,33 @@ h2 {
     /* Convertido de 10px a porcentaje */
 }
 
+section.video {
+    position: relative;
+    max-width: 350px;
+}
+.video h2 {
+    text-align: center;
+}
+
+.video p {
+    margin-top: min(1vw);
+    margin-bottom: min(1vw);
+    text-align: left;
+    font-size: min(1, 22px);
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* section.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+} */
+
 .h2-contacto {
     margin-top: min(1.5vw);
     text-align: center;
@@ -557,7 +584,7 @@ footer {
     .p-lenguajes-movil {
         margin-top: min(1.5vw);
         text-align: center;
-        font-size: min(2.71875vw, 22px);
+        font-size: min(3.5vw, 22px);
         /* Convertido de 22px a vw */
         font-family: "Roboto Mono", monospace;
         font-optical-sizing: auto;
@@ -565,17 +592,37 @@ footer {
         font-style: normal;
     }
 
+    section.video {
+        max-width: 350px;
+        margin: 0 auto; 
+    }
+    .video h2 {
+        text-align: center;
+    }
+    
+    .video p {
+        text-align: center;
+        margin-top: min(1vw);
+        margin-bottom: min(1vw);
+        text-align: left;
+        font-size: min(3, 22px);
+        font-family: "Roboto Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+    }
+
 
     .h2-contacto {
         margin-top: min(1.5vw);
         text-align: center;
-        font-size: min(2.71875vw, 22px);
+        font-size: min(3.7vw, 22px);
         font-family: "Roboto Mono", monospace;
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
     }
-    
+
     #contacto {
         font-family: "Roboto Mono", monospace;
         background-color: #f0f0f0;
@@ -584,20 +631,20 @@ footer {
         font-size: min(3.5vw, 22px);
 
     }
-    
+
     #contacto p {
         font-family: "Roboto Mono", monospace;
         margin-bottom: 10px;
         text-align: center;
     }
-    
+
     #contacto ul {
         font-family: "Roboto Mono", monospace;
         text-align: center;
         list-style-type: none;
         padding: 0;
     }
-    
+
     #contacto li {
         font-family: "Roboto Mono", monospace;
         text-align: center;
